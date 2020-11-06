@@ -6,7 +6,7 @@
 /*   By: nvan-win <nvan-win@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/26 13:36:48 by nvan-win      #+#    #+#                 */
-/*   Updated: 2020/11/04 10:12:46 by nvan-win      ########   odam.nl         */
+/*   Updated: 2020/11/06 16:52:47 by nvan-win      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,4 +115,5 @@ void		set_sprite(t_game *game, double *z_buffer)
 		draw_sprite(game, z_buffer);
 		i++;
 	}
+	free(game->z_buffer);
 }

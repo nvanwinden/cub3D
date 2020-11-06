@@ -6,7 +6,7 @@
 /*   By: nvan-win <nvan-win@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/26 12:50:50 by nvan-win      #+#    #+#                 */
-/*   Updated: 2020/11/04 09:43:36 by nvan-win      ########   odam.nl         */
+/*   Updated: 2020/11/06 17:03:00 by nvan-win      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,8 +133,9 @@ static void	set_camera(t_game *game)
 
 int			render_next_frame(t_game *game)
 {
-	double			z_buffer[game->width];
-
+	game->z_buffer = ft_calloc(game->width, sizeof(double));
+	if (game->z_buffer == NULL)
+		return (error("Malloc error: game->z_buffer"));
 	game->x = 0;
 	while (game->x < game->width)
 	{
@@ -145,10 +146,10 @@ int			render_next_frame(t_game *game)
 		set_wall_height(game);
 		set_tex_vars(game);
 		put_pixels(game);
-		z_buffer[game->x] = game->perp_wall_dist;
+		game->z_buffer[game->x] = game->perp_wall_dist;
 		game->x++;
 	}
-	set_sprite(game, z_buffer);
+	set_sprite(game, game->z_buffer);
 	mlx_put_image_to_window(game->mlx.mlx, game->mlx.win, game->mlx.img, 0, 0);
 	if (game->save_flag == 0)
 		get_new_img(game);

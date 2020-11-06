@@ -6,7 +6,7 @@
 /*   By: nvan-win <nvan-win@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/31 11:24:25 by nvan-win      #+#    #+#                 */
-/*   Updated: 2020/11/04 15:28:09 by nvan-win      ########   odam.nl         */
+/*   Updated: 2020/11/06 16:50:09 by nvan-win      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,6 +132,7 @@ typedef struct		s_game
 	double			plane_x;
 	double			plane_y;
 	int				set_camera;
+	double			*z_buffer;
 	double			camera_x;
 	double			ray_dir_x;
 	double			ray_dir_y;

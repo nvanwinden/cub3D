@@ -6,7 +6,7 @@
 /*   By: nvan-win <nvan-win@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/03 08:42:32 by nvan-win      #+#    #+#                 */
-/*   Updated: 2020/11/04 13:37:01 by nvan-win      ########   odam.nl         */
+/*   Updated: 2020/11/06 18:26:56 by nvan-win      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,20 @@ static int	rgb_to_hex(int r, int g, int b)
 	return (sum);
 }
 
+void		set_bmp_size(t_game *game, t_cub *scene)
+{
+	{
+		if (scene->id_ptr.width > 16384)
+			game->width = 16384;
+		else
+			game->width = scene->id_ptr.width;
+		if (scene->id_ptr.height > 16384)
+			game->height = 16384;
+		else
+			game->height = scene->id_ptr.height;
+	}
+}
+
 static void	set_screen_size(t_game *game, t_cub *scene)
 {
 	int w;
@@ -63,10 +77,7 @@ void		init_game(t_game *game, t_cub *scene)
 	if (game->save_flag == 0)
 		set_screen_size(game, scene);
 	else
-	{
-		game->width = scene->id_ptr.width;
-		game->height = scene->id_ptr.height;
-	}
+		set_bmp_size(game, scene);
 	game->pos_x = scene->startpos_y + 0.5;
 	game->pos_y = scene->startpos_x + 0.5;
 	game->floor = rgb_to_hex(scene->floor.r, scene->floor.g, scene->floor.b);
