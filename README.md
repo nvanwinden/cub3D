@@ -53,7 +53,8 @@ Run `make`.
 | **C** 225,30,0 | ceiling color in RGB |
 
 
+https://user-images.githubusercontent.com/58479085/195980815-13221a4b-ea1b-4012-b518-9d6a4cb65b09.mov
 
-https://user-images.githubusercontent.com/58479085/195980473-9b121c3f-06b4-4bc7-8fe6-e4dc81509cd1.mov
+
 
 
