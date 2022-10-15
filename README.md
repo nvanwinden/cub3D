@@ -1,15 +1,22 @@
 # Cub3d
 
-**Codam [42 Network] project**: first-person 3D representation of a 2D maze using **raycasting**. Inspired by the world-famous 90's game **Wolfenstein**.
+**Codam [42 Network] project**: first-person 3D representation of a 2D maze using **raycasting**. Inspired by the world-famous 90's game [Wolfenstein 3D](http://users.atw.hu/wolf3d/).
 
-**Project requirements**:
+__Project requirements__:
 
 - Use the **MinilibX** (basic graphical library written in C and used by 42 students).
 - **Display different wall textures**, that vary depending on which compass point the wall is facing (NESW).
 - Display a **sprite** instead of a wall.
 - Set **floor and ceiling colours**.
 - **Save** the first rendered image in .bmp format.
-- Parse a config file in which you can set 
+- The program must take a **.cub** file as a first argument, which contains the scene description.
+
+__Skills__:
+
+- Imperative programming
+- Graphics
+- Rigor
+- Algorithms & AI
 
 ## Instructions :clipboard:
 
@@ -40,6 +47,21 @@ Run `make`.
 `./cub3d maps/map.cub --save`
 
 ### Cub
+
+The map must be composed of 4 possible digits:
+
+- **0** for an empty space
+- **1** for a wall
+- **2** for a sprite
+- **N**, **E**, **S** or **W** for the player's starting position and cardinal direction
+
+```
+111111
+100101
+102001
+1100N1
+111111
+```
 
 |  |  |
 |--|--|
