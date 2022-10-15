@@ -51,3 +51,9 @@ Run `make`.
 | **S** ./path_to_the_sprite_texture | sprite texture |
 | **F** 220,100,0 | floor color in RGB |
 | **C** 225,30,0 | ceiling color in RGB |
+
+
+
+https://user-images.githubusercontent.com/58479085/195980473-9b121c3f-06b4-4bc7-8fe6-e4dc81509cd1.mov
+
+
