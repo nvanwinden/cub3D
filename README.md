@@ -73,10 +73,3 @@ The map must be composed of 4 possible digits:
 | **S** ./path_to_the_sprite_texture | sprite texture |
 | **F** 220,100,0 | floor color in RGB |
 | **C** 225,30,0 | ceiling color in RGB |
-
-
-https://user-images.githubusercontent.com/58479085/195980815-13221a4b-ea1b-4012-b518-9d6a4cb65b09.mov
-
-
-
-
