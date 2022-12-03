@@ -1,6 +1,6 @@
 # Cub3d
 
-**Codam [42 Network] project**: first-person 3D representation of a 2D maze using **raycasting**. Inspired by the world-famous 90's game [Wolfenstein 3D](http://users.atw.hu/wolf3d/).
+**Codam [42 Network] project**: code a first-person 3D representation of a 2D maze using **raycasting**. In this maze you'll be able to walk around. Inspired by the world-famous 90's game [Wolfenstein 3D](http://users.atw.hu/wolf3d/).
 
 __Project requirements__:
 
@@ -73,3 +73,9 @@ The map must be composed of 4 possible digits:
 | **S** ./path_to_the_sprite_texture | sprite texture |
 | **F** 220,100,0 | floor color in RGB |
 | **C** 225,30,0 | ceiling color in RGB |
+
+## In action :surfing_man:
+
+<img width="894" alt="cub3d-screenshot" src="https://user-images.githubusercontent.com/58479085/205441804-44ec8706-841f-41a4-9338-89f32a255aa1.png">
+
+
