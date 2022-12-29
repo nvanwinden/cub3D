@@ -1,5 +1,7 @@
 # Cub3d
 
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+
 **Codam [42 Network] project**: code a first-person 3D representation of a 2D maze using **raycasting**. In this maze you'll be able to walk around. Inspired by the world-famous 90's game [Wolfenstein 3D](http://users.atw.hu/wolf3d/).
 
 __Project requirements__:
